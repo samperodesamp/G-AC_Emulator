@@ -107,7 +107,7 @@ public:
 			headers = curl_slist_append(headers, header);
 			sprintf_s(header, "NA: %s", easy_crypt(guid).c_str());
 			headers = curl_slist_append(headers, header);
-			headers = curl_slist_append(headers, "XU: 1.0.0.6");
+			headers = curl_slist_append(headers, "XU: 1.0.0.7");
 			headers = curl_slist_append(headers, "Y: vc8deu8dvv8ueicccc");
 			curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
 
